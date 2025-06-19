@@ -1,6 +1,7 @@
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist, Geist_Mono, Syne } from "next/font/google"
 import "./../app/styles/globals.css"
 import "bootstrap/dist/css/bootstrap.min.css"
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -11,6 +12,12 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 })
+
+const syne = Syne({
+  variable: "--font-syne",
+  subsets: ["latin"],
+  weight: ["400", "600", "700"], // add weights you need
+});
 
 export const metadata = {
   title: "Create Next App",

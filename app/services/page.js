@@ -1,38 +1,34 @@
-import { Container, Button, Row, Col, Alert } from "react-bootstrap"
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
-export default function WelcomePage() {
+function BasicExample() {
   return (
-    <Container className="text-center mt-5">
-      <Row className="mb-4">
-        <Col>
-          <h1 className="text-primary">Welcome Services!</h1>
-          <p className="text-secondary fs-5">
-            This is a simple welcome page using React Bootstrap colors and
-            components.
-          </p>
-        </Col>
-      </Row>
-
-      <Row className="mb-4 justify-content-center">
-        <Col xs="auto">
-          <Button variant="success" className="me-2">
-            Get Started
-          </Button>
-          <Button variant="warning" className="me-2">
-            Learn More
-          </Button>
-          <Button variant="danger">Contact Us</Button>
-        </Col>
-      </Row>
-
-      <Row>
-        <Col md={{ span: 6, offset: 3 }}>
-          <Alert variant="info">
-            React Bootstrap gives you easy access to Bootstrap’s colors and
-            styles in React.
-          </Alert>
-        </Col>
-      </Row>
-    </Container>
-  )
+    <Navbar expand="lg" className="bg-body-tertiary">
+      <Container>
+        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#link">Link</Nav.Link>
+            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">
+                Another action
+              </NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">
+                Separated link
+              </NavDropdown.Item>
+            </NavDropdown>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
+
+export default BasicExample;
