@@ -215,6 +215,9 @@ span.mil-accent {
   flex-direction: column;
   gap: 30px;
 }
+.HomeTech {
+  padding-top: 200px;
+}
 .HomeTech .swiper-button-prev,
 .HomeTech .swiper-button-next,
 .clientsays .swiper-button-prev,

@@ -11,6 +11,7 @@ import "swiper/css"
 import "swiper/css/navigation"
 import "swiper/css/pagination"
 import "swiper/css/scrollbar"
+import Image from "next/image"
 
 export default function WelcomePage() {
   const [key, setKey] = useState("home")
@@ -118,11 +119,11 @@ export default function WelcomePage() {
               >
                 <SwiperSlide>
                   <div className="homeTechslider rounded-10">
-                    <img
+                    <Image
                       src="/media/home/node-js.svg"
                       alt="Node Js"
-                      width="53"
-                      height="53"
+                      width={53}
+                      height={53}
                       className="m-auto"
                     />
                     <h5 className="fw-semibold logo-color text-center mb-2">
@@ -132,11 +133,11 @@ export default function WelcomePage() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="homeTechslider rounded-10">
-                    <img
+                    <Image
                       src="/media/home/React-js.svg"
                       alt="React-js"
-                      width="53"
-                      height="53"
+                      width={53}
+                      height={53}
                       className="m-auto"
                     />
                     <h5 className="fw-semibold logo-color text-center mb-2">
@@ -146,11 +147,11 @@ export default function WelcomePage() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="homeTechslider rounded-10">
-                    <img
+                    <Image
                       src="/media/home/laravel.svg"
                       alt="laravel"
-                      width="53"
-                      height="53"
+                      width={53}
+                      height={53}
                       className="m-auto"
                     />
                     <h5 className="fw-semibold logo-color text-center mb-2">
@@ -160,11 +161,11 @@ export default function WelcomePage() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="homeTechslider rounded-10">
-                    <img
+                    <Image
                       src="/media/home/shopify.svg"
                       alt="shopify"
-                      width="53"
-                      height="53"
+                      width={53}
+                      height={53}
                       className="m-auto"
                     />
                     <h5 className="fw-semibold logo-color text-center mb-2">
@@ -174,11 +175,11 @@ export default function WelcomePage() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="homeTechslider rounded-10">
-                    <img
+                    <Image
                       src="/media/home/wordpress.svg"
                       alt="wordpress"
-                      width="53"
-                      height="53"
+                      width={53}
+                      height={53}
                       className="m-auto"
                     />
                     <h5 className="fw-semibold logo-color text-center mb-2">
@@ -188,11 +189,11 @@ export default function WelcomePage() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="homeTechslider rounded-10">
-                    <img
+                    <Image
                       src="/media/home/flutter.webp"
                       alt="flutter"
-                      width="53"
-                      height="53"
+                      width={53}
+                      height={53}
                       className="m-auto"
                     />
                     <h5 className="fw-semibold logo-color text-center mb-2">
@@ -202,11 +203,11 @@ export default function WelcomePage() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="homeTechslider rounded-10">
-                    <img
+                    <Image
                       src="/media/home/android.svg"
                       alt="android"
-                      width="53"
-                      height="53"
+                      width={53}
+                      height={53}
                       className="m-auto"
                     />
                     <h5 className="fw-semibold logo-color text-center mb-2">
@@ -216,11 +217,11 @@ export default function WelcomePage() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="homeTechslider rounded-10">
-                    <img
+                    <Image
                       src="/media/home/ios.svg"
                       alt="ios"
-                      width="53"
-                      height="53"
+                      width={53}
+                      height={53}
                       className="m-auto"
                     />
                     <h5 className="fw-semibold logo-color text-center mb-2">
@@ -230,11 +231,11 @@ export default function WelcomePage() {
                 </SwiperSlide>
                 <SwiperSlide>
                   <div className="homeTechslider rounded-10">
-                    <img
+                    <Image
                       src="/media/home/php.svg"
                       alt="php"
-                      width="53"
-                      height="53"
+                      width={53}
+                      height={53}
                       className="m-auto"
                     />
                     <h5 className="fw-semibold logo-color text-center mb-2">
@@ -307,7 +308,7 @@ export default function WelcomePage() {
                   </span>
                 </h4>
                 <div className="roundshape">
-                  <img src={"/media/home/Frame.svg"} />
+                  <img src={"/media/home/Frame.svg"} alt="" />
                 </div>
               </div>
               <span className="logo-color">
@@ -1506,7 +1507,7 @@ export default function WelcomePage() {
                   </span>{" "}
                   <br />
                   <span className="mil-accent"> Impeccable </span> Service –
-                  That's Us{" "}
+                  That\'s Us{" "}
                 </span>
               </h2>
               <div className="integrity">
@@ -1521,7 +1522,7 @@ export default function WelcomePage() {
                     Agile at the Core
                   </h4>
                   <p className="text-white text-center">
-                    Each project's unique nature means we don't adopt Agile
+                    Each project\'s unique nature means we don\'t adopt Agile
                     end-to-end in every case but we uphold an Agile Methods
                     internally. We champion self-governing teams of developers,
                     UX architects, and QA experts, giving them the autonomy to
@@ -1561,7 +1562,7 @@ export default function WelcomePage() {
                   </h4>
                   <p className="text-white text-center">
                     We push the boundaries of creativity in our solutions.
-                    Whether it's reimagining an architecture or devising a
+                    Whether it\'s reimagining an architecture or devising a
                     revolutionary interaction, we strive for the best. Our
                     emphasis on user-centric discovery means our output remains
                     relevant for years to come.
@@ -1800,10 +1801,10 @@ export default function WelcomePage() {
                     <div className="box rounded-10">
                       <div className="content">
                         <h4 className="mb-0 text-white line-height">
-                          Appeak has successfully released the apps they've
+                          Appeak has successfully released the apps they\'ve
                           developed into the application stores. Appeak also
                           leads a responsive and punctual process. We are
-                          fainted with team's dedication, professionalism, work
+                          fainted with team\'s dedication, professionalism, work
                           quality, and commitment to top-quality products.
                         </h4>
                       </div>
@@ -1938,6 +1939,7 @@ export default function WelcomePage() {
                       <img
                         src="/media/home/health-consulting-app.webp"
                         width="100%"
+                        alt=""
                         height="auto"
                         className="rounded-10 mb-3"
                       ></img>
@@ -1958,6 +1960,7 @@ export default function WelcomePage() {
                         src="/media/home/tournamanet.webp"
                         width="100%"
                         height="auto"
+                        alt=""
                         className="rounded-10 mb-3"
                       ></img>
                       <h3 className="title fw-semibold text-white">
@@ -1978,6 +1981,7 @@ export default function WelcomePage() {
                         width="100%"
                         height="auto"
                         className="rounded-10 mb-3"
+                        alt=""
                       ></img>
                       <h3 className="title fw-semibold text-white">
                         Charity Exchange
