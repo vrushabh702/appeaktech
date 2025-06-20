@@ -4,6 +4,13 @@
   padding: 0px !important;
 }
 
+.headerSection {
+  position: fixed;
+  width: 100%;
+  padding: 15px 0px;
+  z-index: 99;
+}
+
 .dropDownMenuShow {
   width: 1300px !important;
   margin: auto !important;

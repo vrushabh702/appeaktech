@@ -52,7 +52,9 @@ export default function Header() {
   // const handleMouseLeave = (setter) => setter(false)
 
   return (
-    <section className={`header ${styles.Header} blueBackground`}>
+    <section
+      className={`header ${styles.Header} ${styles.headerSection} blueBackground`}
+    >
       <Container className={`${styles.new}`}>
         <Row className="align-items-center">
           <Col md={3}>
