@@ -1115,8 +1115,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/css.webp"
                                 alt="css"
-                                width={35}
-                                height={35}
+                                width={60}
+                                height={40}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 CSS
@@ -1126,8 +1126,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/bootstrap.webp"
                                 alt="bootstrap"
-                                width={35}
-                                height={35}
+                                width={60}
+                                height={40}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Bootstrap
@@ -1137,8 +1137,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/js.webp"
                                 alt="Javascript"
-                                width={35}
-                                height={35}
+                                width={42}
+                                height={42}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Javascript
@@ -1159,8 +1159,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/reactjs.webp"
                                 alt="reactjs"
-                                width={35}
-                                height={35}
+                                width={40}
+                                height={40}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 React JS
@@ -1170,8 +1170,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/view-js.webp"
                                 alt="view-js"
-                                width={35}
-                                height={35}
+                                width={60}
+                                height={40}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 View JS
@@ -1185,8 +1185,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/php.webp"
                                 alt="php"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 PHP
@@ -1196,8 +1196,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/laravel.webp"
                                 alt="laravel"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Laravel
@@ -1207,8 +1207,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/Python.webp"
                                 alt="Python"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Python
@@ -1218,19 +1218,20 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/mn.webp"
                                 alt="Microsoft.net"
-                                width={35}
-                                height={35}
+                                width={45}
+                                height={45}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 MVC.Net
                               </p>
                             </div>
-                            <div className="text-center">
+                            <div className="text-center relative w-full aspect-[16/9]">
                               <Image
                                 src="/media/home/node.webp"
                                 alt="node"
-                                width={35}
-                                height={35}
+                                width={60}
+                                height={30}
+                                className="object-contain"
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Node JS
@@ -1240,8 +1241,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/newrubyrails.webp"
                                 alt="newrubyrails"
-                                width={35}
-                                height={35}
+                                width={60}
+                                height={30}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Ruby On Rails
@@ -1255,8 +1256,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/magento.webp"
                                 alt="magento"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Magento
@@ -1266,8 +1267,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/shopfiy.webp"
                                 alt="shopfiy"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Shopfiy
@@ -1277,8 +1278,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/woo.webp"
                                 alt="woo-commerce"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 WooCommerce
@@ -1288,8 +1289,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/wordpress.webp"
                                 alt="wordpress"
-                                width={35}
-                                height={35}
+                                width={45}
+                                height={45}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Wordpress
@@ -1299,8 +1300,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/BigCommerce.webp"
                                 alt="BigCommerce"
-                                width={35}
-                                height={35}
+                                width={40}
+                                height={40}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 BigCommerce
@@ -1310,8 +1311,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/Joomla.webp"
                                 alt="Joomla"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Joomla
@@ -1321,8 +1322,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/Drupal.webp"
                                 alt="Drupal"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Drupal
@@ -1332,8 +1333,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/Moodle.webp"
                                 alt="Moodle"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Moodle
@@ -1347,8 +1348,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/ios.webp"
                                 alt="ios"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 IOS
@@ -1358,8 +1359,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/Android.webp"
                                 alt="Android"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Android
@@ -1369,8 +1370,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/flutter.webp"
                                 alt="flutter"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Flutter
@@ -1380,8 +1381,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/reactjs.webp"
                                 alt="react native"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 React Native
@@ -1391,8 +1392,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/Kotlin.webp"
                                 alt="Kotlin"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Kotlin
@@ -1402,8 +1403,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/Swift.webp"
                                 alt="Swift"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Swift
@@ -1413,8 +1414,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/IONIC.webp"
                                 alt="IONIC"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 IONIC
@@ -1428,7 +1429,7 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/mysql.webp"
                                 alt="mysql"
-                                width={35}
+                                width={70}
                                 height={35}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
@@ -1439,8 +1440,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/Sql.webp"
                                 alt="Sql"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 SQL
@@ -1450,8 +1451,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/Postgre.webp"
                                 alt="Postgre SOL"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Postgre SOL
@@ -1461,8 +1462,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/MongoDB.webp"
                                 alt="MongoDB"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 MongoDB
@@ -1472,8 +1473,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/SQLite.webp"
                                 alt="SQlLite"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 SQL-LITE
@@ -1483,8 +1484,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/Firebase.webp"
                                 alt="Firebase"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Firebase
@@ -1494,8 +1495,8 @@ export default function WelcomePage() {
                               <Image
                                 src="/media/home/Snowflake.webp"
                                 alt="Snowflake"
-                                width={35}
-                                height={35}
+                                width={50}
+                                height={50}
                               />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Snowflake
