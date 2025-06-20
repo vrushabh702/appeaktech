@@ -308,7 +308,12 @@ export default function WelcomePage() {
                   </span>
                 </h4>
                 <div className="roundshape">
-                  <img src={"/media/home/Frame.svg"} alt="" />
+                  <Image
+                    src={"/media/home/Frame.svg"}
+                    alt="Frame"
+                    width={75}
+                    height={75}
+                  />
                 </div>
               </div>
               <span className="logo-color">
@@ -353,9 +358,11 @@ export default function WelcomePage() {
                   </span>
                 </h4>
                 <div className="roundshape">
-                  <img
-                    src={"/media/home/web-development.webp"}
+                  <Image
+                    src={"/svg/home/web-development.svg"}
                     alt="web-development"
+                    width={75}
+                    height={75}
                   />
                 </div>
               </div>
@@ -401,9 +408,11 @@ export default function WelcomePage() {
                   </span>
                 </h4>
                 <div className="roundshape">
-                  <img
-                    src={"/media/home/mobile-application.webp"}
+                  <Image
+                    src={"/svg/home/mobile-application.svg"}
                     alt="mobile-application"
+                    width={0}
+                    height={0}
                   />
                 </div>
               </div>
@@ -449,9 +458,11 @@ export default function WelcomePage() {
                   </span>
                 </h4>
                 <div className="roundshape">
-                  <img
-                    src={"/media/home/software-development.webp"}
+                  <Image
+                    src={"/svg/home/software-development.svg"}
                     alt="software-development"
+                    width={75}
+                    height={75}
                   />
                 </div>
               </div>
@@ -496,7 +507,12 @@ export default function WelcomePage() {
                   </span>
                 </h4>
                 <div className="roundshape">
-                  <img src={"/media/home/web-design.webp"} alt="web-design" />
+                  <Image
+                    src={"/svg/home/web-design.svg"}
+                    alt="web-design"
+                    width={75}
+                    height={75}
+                  />
                 </div>
               </div>
               <span className="logo-color">
@@ -799,12 +815,12 @@ export default function WelcomePage() {
               </h5>
             </Col>
             <Col md={2}>
-              <img
+              <Image
                 src="/media/home/readmore.webp"
                 alt="reamore"
-                width="100%"
-                height="auto"
-              ></img>
+                width={196}
+                height={196}
+              />
             </Col>
           </Row>
           <Row>
@@ -1085,78 +1101,78 @@ export default function WelcomePage() {
                         <Tab.Pane eventKey="frontend">
                           <div className="techlist mt-3">
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/html.webp"
                                 alt="html"
-                                width="35"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 HTML
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/css.webp"
                                 alt="css"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 CSS
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/bootstrap.webp"
                                 alt="bootstrap"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Bootstrap
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/js.webp"
                                 alt="Javascript"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Javascript
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/angular.webp"
                                 alt="angular"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Angular
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/reactjs.webp"
                                 alt="reactjs"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 React JS
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/view-js.webp"
                                 alt="view-js"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 View JS
                               </p>
@@ -1166,67 +1182,67 @@ export default function WelcomePage() {
                         <Tab.Pane eventKey="backend">
                           <div className="techlist mt-3">
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/php.webp"
                                 alt="php"
-                                width="35"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 PHP
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/laravel.webp"
                                 alt="laravel"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Laravel
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/Python.webp"
                                 alt="Python"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Python
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/mn.webp"
                                 alt="Microsoft.net"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 MVC.Net
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/node.webp"
                                 alt="node"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Node JS
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/newrubyrails.webp"
                                 alt="newrubyrails"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Ruby On Rails
                               </p>
@@ -1236,89 +1252,89 @@ export default function WelcomePage() {
                         <Tab.Pane eventKey="ecommerce">
                           <div className="techlist mt-3">
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/magento.webp"
                                 alt="magento"
-                                width="35"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Magento
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/shopfiy.webp"
                                 alt="shopfiy"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Shopfiy
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/woo.webp"
                                 alt="woo-commerce"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 WooCommerce
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/wordpress.webp"
                                 alt="wordpress"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Wordpress
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/BigCommerce.webp"
                                 alt="BigCommerce"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 BigCommerce
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/Joomla.webp"
                                 alt="Joomla"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Joomla
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/Drupal.webp"
                                 alt="Drupal"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Drupal
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/Moodle.webp"
                                 alt="Moodle"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Moodle
                               </p>
@@ -1328,78 +1344,78 @@ export default function WelcomePage() {
                         <Tab.Pane eventKey="mobilleapp">
                           <div className="techlist mt-3">
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/ios.webp"
                                 alt="ios"
-                                width="35"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 IOS
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/Android.webp"
                                 alt="Android"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Android
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/flutter.webp"
                                 alt="flutter"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Flutter
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/reactjs.webp"
                                 alt="react native"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 React Native
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/Kotlin.webp"
                                 alt="Kotlin"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Kotlin
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/Swift.webp"
                                 alt="Swift"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Swift
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/IONIC.webp"
                                 alt="IONIC"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 IONIC
                               </p>
@@ -1409,78 +1425,78 @@ export default function WelcomePage() {
                         <Tab.Pane eventKey="database">
                           <div className="techlist mt-3">
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/mysql.webp"
                                 alt="mysql"
-                                width="35"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 MYSQL
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/Sql.webp"
                                 alt="Sql"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 SQL
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/Postgre.webp"
                                 alt="Postgre SOL"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Postgre SOL
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/MongoDB.webp"
                                 alt="MongoDB"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 MongoDB
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/SQLite.webp"
                                 alt="SQlLite"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 SQL-LITE
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/Firebase.webp"
                                 alt="Firebase"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Firebase
                               </p>
                             </div>
                             <div className="text-center">
-                              <img
+                              <Image
                                 src="/media/home/Snowflake.webp"
                                 alt="Snowflake"
-                                width="auto"
-                                height="35"
-                              ></img>
+                                width={35}
+                                height={35}
+                              />
                               <p className="text-white mb-0 fw-semibold mt-3">
                                 Snowflake
                               </p>
@@ -1507,34 +1523,34 @@ export default function WelcomePage() {
                   </span>{" "}
                   <br />
                   <span className="mil-accent"> Impeccable </span> Service –
-                  That\'s Us{" "}
+                  That&apos;s Us{" "}
                 </span>
               </h2>
               <div className="integrity">
                 <div className="box rounded-15">
-                  <img
+                  <Image
                     src="/media/home/agile-at-the-core.webp"
                     alt="Agile at the Core"
-                    width="100%"
-                    height="auto"
+                    width={113}
+                    height={113}
                   />
                   <h4 className="fw-semibold logo-color text-center mb-3">
                     Agile at the Core
                   </h4>
                   <p className="text-white text-center">
-                    Each project\'s unique nature means we don\'t adopt Agile
-                    end-to-end in every case but we uphold an Agile Methods
-                    internally. We champion self-governing teams of developers,
-                    UX architects, and QA experts, giving them the autonomy to
-                    assign tasks and hone details.
+                    Each project&apos;s unique nature means we don&apos;t adopt
+                    Agile end-to-end in every case but we uphold an Agile
+                    Methods internally. We champion self-governing teams of
+                    developers, UX architects, and QA experts, giving them the
+                    autonomy to assign tasks and hone details.
                   </p>
                 </div>
                 <div className="box rounded-15">
-                  <img
+                  <Image
                     src="/media/home/transparancy.webp"
                     alt="Transparency"
-                    width="100%"
-                    height="auto"
+                    width={113}
+                    height={113}
                   />
                   <h4 className="fw-semibold logo-color text-center mb-3">
                     Transparency
@@ -1551,29 +1567,29 @@ export default function WelcomePage() {
                   </p>
                 </div>
                 <div className="box rounded-15">
-                  <img
+                  <Image
                     src="/media/home/creativity.webp"
                     alt="Creativity"
-                    width="100%"
-                    height="auto"
+                    width={113}
+                    height={113}
                   />
                   <h4 className="fw-semibold logo-color text-center mb-3">
                     Creativity
                   </h4>
                   <p className="text-white text-center">
                     We push the boundaries of creativity in our solutions.
-                    Whether it\'s reimagining an architecture or devising a
+                    Whether it&apos;s reimagining an architecture or devising a
                     revolutionary interaction, we strive for the best. Our
                     emphasis on user-centric discovery means our output remains
                     relevant for years to come.
                   </p>
                 </div>
                 <div className="box rounded-15">
-                  <img
+                  <Image
                     src="/media/home/quality-assurance-testing.webp"
                     alt="Quality Assurance- Testing"
-                    width="100%"
-                    height="auto"
+                    width={113}
+                    height={113}
                   />
                   <h4 className="fw-semibold logo-color text-center mb-3">
                     Quality Assurance- Testing
@@ -1589,11 +1605,11 @@ export default function WelcomePage() {
                   </p>
                 </div>
                 <div className="box rounded-15">
-                  <img
+                  <Image
                     src="/media/home/success-with-technology.webp"
                     alt="Success with Technology"
-                    width="100%"
-                    height="auto"
+                    width={113}
+                    height={113}
                   />
                   <h4 className="fw-semibold logo-color text-center mb-3">
                     Success with Technology
@@ -1609,11 +1625,11 @@ export default function WelcomePage() {
                   </p>
                 </div>
                 <div className="box rounded-15">
-                  <img
+                  <Image
                     src="/media/home/around-our-clients.webp"
                     alt="Around Our Clients"
-                    width="100%"
-                    height="auto"
+                    width={113}
+                    height={113}
                   />
                   <h4 className="fw-semibold logo-color text-center mb-3">
                     Around Our Clients
@@ -1645,36 +1661,36 @@ export default function WelcomePage() {
                   </span>
                 </h2>
                 <div className="logos">
-                  <img
+                  <Image
                     src="/media/home/Figure-→-Letyouknow.webp"
-                    width="100%"
-                    height="auto"
+                    width={223}
+                    height={91}
                     alt="client"
-                  ></img>
-                  <img
+                  />
+                  <Image
                     src="/media/home/Figure-→-Nixi.webp"
-                    width="100%"
-                    height="auto"
+                    width={223}
+                    height={91}
                     alt="client"
-                  ></img>
-                  <img
+                  />
+                  <Image
                     src="/media/home/Figure-→-Nsi.webp"
-                    width="100%"
-                    height="auto"
+                    width={223}
+                    height={91}
                     alt="client"
-                  ></img>
-                  <img
+                  />
+                  <Image
                     src="/media/home/Figure-→-Wealth.webp"
-                    width="100%"
-                    height="auto"
+                    width={223}
+                    height={91}
                     alt="client"
-                  ></img>
-                  <img
+                  />
+                  <Image
                     src="/media/home/Figure-→-Zigram.webp"
-                    width="100%"
-                    height="auto"
+                    width={223}
+                    height={91}
                     alt="client"
-                  ></img>
+                  />
                 </div>
               </div>
             </Col>
@@ -1696,10 +1712,10 @@ export default function WelcomePage() {
                     href="https://clutch.co/profile/appeak-technologies-llp?utm_source=widget&utm_medium=1&utm_campaign=widget&utm_content=stars&utm_term=www.appeaktech.com#reviews"
                     className="bg-white p-2 rounded-15 text-center"
                   >
-                    <img
+                    <Image
                       src="/media/home/clutch-review.webp"
-                      width="111"
-                      height="auto"
+                      width={111}
+                      height={48}
                       alt="clutch review"
                     />
                   </a>
@@ -1707,10 +1723,10 @@ export default function WelcomePage() {
                     href="https://www.goodfirms.co/company/appeak-technologies-llp"
                     className="bg-white p-2 rounded-15 text-center"
                   >
-                    <img
+                    <Image
                       src="/media/home/good-firm.webp"
-                      width="111"
-                      height="auto"
+                      width={111}
+                      height={48}
                       alt="google firm review"
                     />
                   </a>
@@ -1718,10 +1734,10 @@ export default function WelcomePage() {
                     href="https://www.google.com/search?q=appeaktech&oq=appeaktech&gs_lcrp=EgZjaHJvbWUqDAgAECMYJxiABBiKBTIMCAAQIxgnGIAEGIoFMgYIARBFGDwyDQgCEC4YrwEYxwEYgAQyCggDEAAYgAQYogQyCggEEAAYgAQYogQyBggFEEUYPDIGCAYQRRg8MgYIBxBFGDzSAQgzMDY4ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#lrd=0x395e855f5b06b123:0xfe64469a5482576,1,,,,"
                     className="bg-white p-2 rounded-15 text-center"
                   >
-                    <img
+                    <Image
                       src="/media/home/google-reviews.webp"
-                      width="111"
-                      height="auto"
+                      width={111}
+                      height={48}
                       alt="Google-Review"
                     />
                   </a>
@@ -1751,13 +1767,13 @@ export default function WelcomePage() {
                         </h3>
                       </div>
                       <div className="info d-flex gap-20">
-                        <img
+                        <Image
                           src="/media/home/Elke-Freed.webp"
-                          width="50"
-                          height="50"
+                          width={50}
+                          height={50}
                           alt="client"
                           className="rounded-circle"
-                        ></img>
+                        />
                         <div>
                           <p className="logo-color mb-1 font-regular fw-semibold">
                             Elke Hinze
@@ -1779,13 +1795,13 @@ export default function WelcomePage() {
                         </h3>
                       </div>
                       <div className="info d-flex gap-20">
-                        <img
+                        <Image
                           src="/media/home/Alesio.webp"
-                          width="50"
-                          height="50"
+                          width={50}
+                          height={50}
                           alt="client"
                           className="rounded-circle"
-                        ></img>
+                        />
                         <div>
                           <p className="logo-color mb-1 font-regular fw-semibold">
                             Alesio
@@ -1801,21 +1817,21 @@ export default function WelcomePage() {
                     <div className="box rounded-10">
                       <div className="content">
                         <h4 className="mb-0 text-white line-height">
-                          Appeak has successfully released the apps they\'ve
+                          Appeak has successfully released the apps they&apos;ve
                           developed into the application stores. Appeak also
                           leads a responsive and punctual process. We are
-                          fainted with team\'s dedication, professionalism, work
-                          quality, and commitment to top-quality products.
+                          fainted with team&apos;s dedication, professionalism,
+                          work quality, and commitment to top-quality products.
                         </h4>
                       </div>
                       <div className="info d-flex gap-20">
-                        <img
+                        <Image
                           src="/media/home/Boris.webp"
-                          width="50"
-                          height="50"
+                          width={50}
+                          height={50}
                           alt="client"
                           className="rounded-circle"
-                        ></img>
+                        />
                         <div>
                           <p className="logo-color mb-1 font-regular fw-semibold">
                             Boris A. Zhukov
@@ -1843,13 +1859,13 @@ export default function WelcomePage() {
                         </h5>
                       </div>
                       <div className="info d-flex gap-20">
-                        <img
+                        <Image
                           src="/media/home/cole.webp"
-                          width="50"
-                          height="50"
+                          width={50}
+                          height={50}
                           alt="client"
                           className="rounded-circle"
-                        ></img>
+                        />
                         <div>
                           <p className="logo-color mb-1 font-regular fw-semibold">
                             Cole Harrup
@@ -1936,13 +1952,13 @@ export default function WelcomePage() {
                 <div className="case rounded-15 logo-color serviceBg border-color p-2 pb-4">
                   <a href="">
                     <div className="position-relative">
-                      <img
+                      <Image
                         src="/media/home/health-consulting-app.webp"
-                        width="100%"
-                        alt=""
-                        height="auto"
+                        width={402}
+                        height={297}
+                        alt="health-consulting-app"
                         className="rounded-10 mb-3"
-                      ></img>
+                      />
                       <h3 className="title fw-semibold text-white ">
                         Health Consulting app
                       </h3>
@@ -1956,13 +1972,13 @@ export default function WelcomePage() {
                 <div className="case rounded-15 logo-color serviceBg border-color p-2 pb-4">
                   <a href="">
                     <div className="position-relative">
-                      <img
+                      <Image
                         src="/media/home/tournamanet.webp"
-                        width="100%"
-                        height="auto"
-                        alt=""
+                        width={402}
+                        height={297}
+                        alt="tournamanet"
                         className="rounded-10 mb-3"
-                      ></img>
+                      />
                       <h3 className="title fw-semibold text-white">
                         Web Development for Tournament Management System
                       </h3>
@@ -1976,13 +1992,13 @@ export default function WelcomePage() {
                 <div className="case rounded-15 logo-color serviceBg border-color p-2 pb-4">
                   <a href="">
                     <div className="position-relative">
-                      <img
+                      <Image
                         src="/media/home/charity-exchange.webp"
-                        width="100%"
-                        height="auto"
+                        width={402}
+                        height={297}
                         className="rounded-10 mb-3"
-                        alt=""
-                      ></img>
+                        alt="charity-exchange"
+                      />
                       <h3 className="title fw-semibold text-white">
                         Charity Exchange
                       </h3>
