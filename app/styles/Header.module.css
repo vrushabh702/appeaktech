@@ -1,14 +1,13 @@
-
 .dropDownToggle {
   border: none !important;
   outline: none;
   padding: 0px !important;
 }
- 
+
 .dropDownMenuShow {
   width: 1300px !important;
   margin: auto !important;
-  position: fixed !important;
+  position: absolute !important;
   min-height: 400px;
   left: 50% !important;
   transform: translateX(-50%);
@@ -43,7 +42,3 @@
   right: 0 !important;
   transform: none !important;
 }
-
- 
-
- 
