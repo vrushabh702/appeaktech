@@ -7,7 +7,7 @@
 .dropDownMenuShow {
   width: 1300px !important;
   margin: auto !important;
-  position: absolute !important;
+  position: fixed !important;
   min-height: 400px;
   left: 50% !important;
   transform: translateX(-50%);
