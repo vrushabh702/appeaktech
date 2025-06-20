@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono, Syne } from "next/font/google"
 import "./../app/styles/globals.css"
 import "bootstrap/dist/css/bootstrap.min.css"
-
+import Header from "./components/layout/Header"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +17,7 @@ const syne = Syne({
   variable: "--font-syne",
   subsets: ["latin"],
   weight: ["400", "600", "700"], // add weights you need
-});
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -28,6 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Header />
         {children}
       </body>
     </html>

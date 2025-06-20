@@ -1,0 +1,29 @@
+.blueBackground {
+  background-color: #004d99;
+}
+.bookNowButton {
+  background-color: #2edccf;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
+.dropdown-menu {
+  background-color: #004d99;
+  border: none;
+}
+.dropdown-item {
+  color: white !important;
+  width: 100vw;
+}
+.dropdown-item:hover {
+  background-color: #003366 !important;
+}
+.megaMenu {
+  width: 100%;
+  padding: 20px;
+  left: 0 !important;
+  right: 0 !important;
+  transform: none !important;
+}
