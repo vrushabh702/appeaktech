@@ -464,7 +464,7 @@ hr {
 .customFooterList a {
   color: white;
   text-decoration: none;
-  display: block;
+  display: inline-blockg;
   margin-bottom: 16px;
 }
 .customFooterList a:hover {

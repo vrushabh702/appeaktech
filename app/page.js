@@ -2382,18 +2382,28 @@ export default function WelcomePage() {
                   <a href="https://www.appeaktech.com/services/web-design/">
                     Web Design Service
                   </a>
+                </li>
+                <li>
                   <a href="https://www.appeaktech.com/services/website-development/">
                     Website Development
                   </a>
+                </li>
+                <li>
                   <a href="https://appeaktech.com/services/e-commerce-development/">
                     E-Commerce Development
                   </a>
+                </li>
+                <li>
                   <a href="https://appeaktech.com/services/mobile-app-development/">
                     Mobile App Development
                   </a>
+                </li>
+                <li>
                   <a href="https://appeaktech.com/services/software-development/">
                     Software Development
                   </a>
+                </li>
+                <li>
                   <a href="https://www.appeaktech.com/services/data-visualization-analytics/">
                     Data Visualization & Analytics
                   </a>
@@ -2409,15 +2419,23 @@ export default function WelcomePage() {
                   <a href="https://www.appeaktech.com/hire-php-developers/">
                     Hire PHP Developers
                   </a>
+                </li>
+                <li>
                   <a href="https://www.appeaktech.com/hire-laravel-developers/">
                     Hire Laravel Developers
                   </a>
+                </li>
+                <li>
                   <a href="https://www.appeaktech.com/hire-wordpress-developers/">
                     Hire WordPress Developers
                   </a>
+                </li>
+                <li>
                   <a href="https://www.appeaktech.com/hire-flutter-developer/">
                     Hire Node.JS Developers
                   </a>
+                </li>
+                <li>
                   <a href="https://www.appeaktech.com/hire-flutter-developer/">
                     Hire Flutter Developers
                   </a>
@@ -2433,12 +2451,18 @@ export default function WelcomePage() {
                   <a href="https://appeaktech.com/technology/e-commerce-web/">
                     E-Commerce Tech
                   </a>
+                </li>
+                <li>
                   <a href="https://appeaktech.com/technology/front-end/">
                     Front-End Frameworks
                   </a>
+                </li>
+                <li>
                   <a href="https://appeaktech.com/technology/back-end/">
                     Back-End Engines
                   </a>
+                </li>
+                <li>
                   <a href="https://appeaktech.com/technology/mobile/">
                     Mobile Frameworks
                   </a>
