@@ -13,7 +13,7 @@ import {
   ListGroup,
   ListGroupItem,
 } from "react-bootstrap"
-import { useState } from "react"
+import { useRef, useState } from "react"
 import styles from "./../../styles/Header.module.css"
 
 export default function Header() {
@@ -22,8 +22,34 @@ export default function Header() {
   const [showTechnology, setShowTechnology] = useState(false)
   const [showHire, setShowHire] = useState(false)
 
-  const handleMouseEnter = (setter) => setter(true)
-  const handleMouseLeave = (setter) => setter(false)
+  const aboutTimeoutRef = useRef(null) // Track timeout ID
+  const servicesTimeoutRef = useRef(null)
+  const techTimeoutRef = useRef(null)
+  const hireTimeoutRef = useRef(null)
+
+  // Generalized enter function
+  const handleMouseEnter = (ref, isOpen, setOpen) => {
+    if (ref.current) {
+      clearTimeout(ref.current)
+      ref.current = null
+    }
+    if (!isOpen) {
+      setOpen(true)
+    }
+  }
+
+  // Generalized leave function
+  const handleMouseLeave = (ref, isOpen, setOpen) => {
+    if (!ref.current && isOpen) {
+      ref.current = setTimeout(() => {
+        setOpen(false)
+        ref.current = null
+      }, 1000)
+    }
+  }
+
+  // const handleMouseEnter = (setter) => setter(true)
+  // const handleMouseLeave = (setter) => setter(false)
 
   return (
     <section className={`header ${styles.Header} blueBackground`}>
@@ -42,9 +68,22 @@ export default function Header() {
                       Home{" "}
                     </NavLink>
                     <Dropdown
+                      // onToggle={() => setShowAbout(!showAbout)}
                       show={showAbout}
-                      onMouseEnter={() => handleMouseEnter(setShowAbout)}
-                      onMouseLeave={() => handleMouseLeave(setShowAbout)}
+                      onMouseEnter={() =>
+                        handleMouseEnter(
+                          aboutTimeoutRef,
+                          showAbout,
+                          setShowAbout
+                        )
+                      }
+                      onMouseLeave={() =>
+                        handleMouseLeave(
+                          aboutTimeoutRef,
+                          showAbout,
+                          setShowAbout
+                        )
+                      }
                     >
                       <DropdownToggle
                         variant="white"
@@ -72,8 +111,20 @@ export default function Header() {
                     </Dropdown>
                     <Dropdown
                       show={showServices}
-                      onMouseEnter={() => handleMouseEnter(setShowServices)}
-                      onMouseLeave={() => handleMouseLeave(setShowServices)}
+                      onMouseEnter={() =>
+                        handleMouseEnter(
+                          servicesTimeoutRef,
+                          showServices,
+                          setShowServices
+                        )
+                      }
+                      onMouseLeave={() =>
+                        handleMouseLeave(
+                          servicesTimeoutRef,
+                          showServices,
+                          setShowServices
+                        )
+                      }
                     >
                       <DropdownToggle
                         variant="white"
@@ -122,8 +173,20 @@ export default function Header() {
                     </Dropdown>
                     <Dropdown
                       show={showTechnology}
-                      onMouseEnter={() => handleMouseEnter(setShowTechnology)}
-                      onMouseLeave={() => handleMouseLeave(setShowTechnology)}
+                      onMouseEnter={() =>
+                        handleMouseEnter(
+                          techTimeoutRef,
+                          showTechnology,
+                          setShowTechnology
+                        )
+                      }
+                      onMouseLeave={() =>
+                        handleMouseLeave(
+                          techTimeoutRef,
+                          showTechnology,
+                          setShowTechnology
+                        )
+                      }
                     >
                       <DropdownToggle
                         variant="white"
@@ -133,7 +196,7 @@ export default function Header() {
                         Technology
                       </DropdownToggle>
                       <DropdownMenu
-                         className={`${styles.dropDownMenu} ${
+                        className={`${styles.dropDownMenu} ${
                           showTechnology ? styles.dropDownMenuShow : ""
                         } justify-content-center mt-0`}
                       >
@@ -161,8 +224,12 @@ export default function Header() {
                     </Dropdown>
                     <Dropdown
                       show={showHire}
-                      onMouseEnter={() => handleMouseEnter(setShowHire)}
-                      onMouseLeave={() => handleMouseLeave(setShowHire)}
+                      onMouseEnter={() =>
+                        handleMouseEnter(hireTimeoutRef, showHire, setShowHire)
+                      }
+                      onMouseLeave={() =>
+                        handleMouseLeave(hireTimeoutRef, showHire, setShowHire)
+                      }
                     >
                       <DropdownToggle
                         variant="white"
@@ -172,7 +239,7 @@ export default function Header() {
                         Hire Tech Expert
                       </DropdownToggle>
                       <DropdownMenu
-                         className={`${styles.dropDownMenu} ${
+                        className={`${styles.dropDownMenu} ${
                           showHire ? styles.dropDownMenuShow : ""
                         } justify-content-center mt-0`}
                       >
