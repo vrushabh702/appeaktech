@@ -17,69 +17,7 @@ export default function WelcomePage() {
 
   return (
     <div>
-      <section className="header blueBackground">
-        <Container>
-          <Row className="align-items-center">
-            <Col md={3}>
-              <img
-                src={"/media/home/logo.webp"}
-                width={"100%"}
-                height={"auto"}
-              />
-            </Col>
-            <Col md={9}>
-              <Navbar expand="lg" className="">
-                <Container>
-                  <Navbar aria-controls="basic-navbar-nav" />
-                  <Navbar>
-                    <Nav className="me-auto navbar">
-                      <Nav href="javascript:void()" className="text-white">
-                        Home{" "}
-                      </Nav>
-                      <Nav href="javascript:void()" className="text-white">
-                        About Us{" "}
-                      </Nav>
-                      <Nav href="javascript:void()" className="text-white">
-                        Services{" "}
-                      </Nav>
-                      <Nav href="javascript:void()" className="text-white">
-                        Technology{" "}
-                      </Nav>
-                      <Nav href="javascript:void()" className="text-white">
-                        Case Studies{" "}
-                      </Nav>
-                      <Nav href="javascript:void()" className="text-white">
-                        Hire Tech Expert{" "}
-                      </Nav>
-                      <Nav href="javascript:void()" className="text-white">
-                        Contact Us{" "}
-                      </Nav>
-                      <Nav href="#" className="text-white bookNowButton">
-                        Book a call{" "}
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="14"
-                          viewBox="0 0 18 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M1 7H17M17 7L11.4 1M17 7L11.4 13"
-                            stroke="#2EDCCF"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          ></path>
-                        </svg>
-                      </Nav>
-                    </Nav>
-                  </Navbar>
-                </Container>
-              </Navbar>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+
       <section className="blueBackground bgImage desktop-padding-100 HomeTech">
         <Container>
           <Row>

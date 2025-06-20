@@ -26,18 +26,18 @@ export default function Header() {
   const handleMouseLeave = (setter) => setter(false)
 
   return (
-    <section className="header blueBackground">
+    <section className={`header ${styles.Header} blueBackground`}>
       <Container className={`${styles.new}`}>
         <Row className="align-items-center">
           <Col md={3}>
             <img src={"/media/home/logo.webp"} width={"100%"} height={"auto"} />
           </Col>
           <Col md={9}>
-            <Navbar expand="lg" className="">
+            <Navbar expand="lg" className="p-0">
               <Container>
                 <Navbar aria-controls="basic-navbar-nav" />
-                <Navbar>
-                  <Container className="me-auto navbar">
+                <Navbar className="p-0">
+                  <Container className="me-auto navbar p-0">
                     <NavLink href="#" className="text-white">
                       Home{" "}
                     </NavLink>
@@ -49,14 +49,16 @@ export default function Header() {
                       <DropdownToggle
                         variant="white"
                         id="dropdown-about"
-                        className="text-white"
+                        className={`${styles.dropDownToggle} text-white`}
                       >
                         About Us
                       </DropdownToggle>
                       <DropdownMenu
-                        className={`${styles.megaMenu} justify-content-center mt-0`}
+                        className={`${styles.dropDownMenu} ${
+                          showAbout ? styles.dropDownMenuShow : ""
+                        } justify-content-center mt-0`}
                       >
-                        <Container>
+                        <Container className={`${styles.containerNew}`}>
                           <Row className="my-4">
                             <Col md={6} lg={3} className="mb-3 mb-lg-0">
                               <DropdownItem href="#">Careers</DropdownItem>
@@ -76,12 +78,14 @@ export default function Header() {
                       <DropdownToggle
                         variant="white"
                         id="dropdown-services"
-                        className="text-white"
+                        className={`${styles.dropDownToggle} text-white`}
                       >
                         Services
                       </DropdownToggle>
                       <DropdownMenu
-                        className={`${styles.megaMenu} justify-content-center mt-0`}
+                        className={`${styles.dropDownMenu} ${
+                          showServices ? styles.dropDownMenuShow : ""
+                        } justify-content-center mt-0`}
                       >
                         <Container>
                           <Row className="my-4">
@@ -124,12 +128,14 @@ export default function Header() {
                       <DropdownToggle
                         variant="white"
                         id="dropdown-technology"
-                        className="text-white"
+                        className={`${styles.dropDownToggle} text-white`}
                       >
                         Technology
                       </DropdownToggle>
                       <DropdownMenu
-                        className={`${styles.megaMenu} justify-content-center mt-0`}
+                         className={`${styles.dropDownMenu} ${
+                          showTechnology ? styles.dropDownMenuShow : ""
+                        } justify-content-center mt-0`}
                       >
                         <Container>
                           <Row className="my-4">
@@ -161,12 +167,14 @@ export default function Header() {
                       <DropdownToggle
                         variant="white"
                         id="dropdown-hire"
-                        className="text-white"
+                        className={`${styles.dropDownToggle} text-white`}
                       >
                         Hire Tech Expert
                       </DropdownToggle>
                       <DropdownMenu
-                        className={`${styles.megaMenu} justify-content-center mt-0`}
+                         className={`${styles.dropDownMenu} ${
+                          showHire ? styles.dropDownMenuShow : ""
+                        } justify-content-center mt-0`}
                       >
                         <Container>
                           <Row className="my-4">

@@ -1,3 +1,19 @@
+
+.dropDownToggle {
+  border: none !important;
+  outline: none;
+  padding: 0px !important;
+}
+ 
+.dropDownMenuShow {
+  width: 1300px !important;
+  margin: auto !important;
+  position: fixed !important;
+  min-height: 400px;
+  left: 50% !important;
+  transform: translateX(-50%);
+  top: 90px !important;
+}
 .blueBackground {
   background-color: #004d99;
 }
@@ -27,3 +43,7 @@
   right: 0 !important;
   transform: none !important;
 }
+
+ 
+
+ 
