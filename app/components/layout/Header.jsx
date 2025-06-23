@@ -57,7 +57,7 @@ export default function Header() {
       ref.current = setTimeout(() => {
         setOpen(false)
         ref.current = null
-      }, 300) // Reduced timeout for better responsiveness
+      }, 1000) // Reduced timeout for better responsiveness
     }
   }
 
