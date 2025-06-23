@@ -11,6 +11,10 @@
   z-index: 99;
 }
 
+.Container {
+  max-width: 1360px !important;
+}
+
 .dropDownMenuShow {
   width: 1300px !important;
   margin: auto !important;

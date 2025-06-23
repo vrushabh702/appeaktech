@@ -65,7 +65,7 @@ export default function Header() {
     <section
       className={`header ${styles.Header} ${styles.headerSection} blueBackground`}
     >
-      <Container className={`${styles.new}`}>
+      <Container className={`${styles.Container}`}>
         <Row className="align-items-center">
           <Col md={3}>
             <img src={"/media/home/logo.webp"} width={"100%"} height={"auto"} />
