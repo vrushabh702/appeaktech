@@ -4,14 +4,11 @@ import {
   NavLink,
   Dropdown,
   Container,
-  Accordion,
   Row,
   Col,
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-  ListGroup,
-  ListGroupItem,
 } from "react-bootstrap"
 import { useRef, useState } from "react"
 import styles from "./../../styles/Header.module.css"
@@ -22,17 +19,33 @@ export default function Header() {
   const [showTechnology, setShowTechnology] = useState(false)
   const [showHire, setShowHire] = useState(false)
 
-  const aboutTimeoutRef = useRef(null) // Track timeout ID
+  const aboutTimeoutRef = useRef(null)
   const servicesTimeoutRef = useRef(null)
   const techTimeoutRef = useRef(null)
   const hireTimeoutRef = useRef(null)
 
+  // Store all timeout refs and their associated setters
+  const dropdowns = [
+    { ref: aboutTimeoutRef, isOpen: showAbout, setOpen: setShowAbout },
+    { ref: servicesTimeoutRef, isOpen: showServices, setOpen: setShowServices },
+    { ref: techTimeoutRef, isOpen: showTechnology, setOpen: setShowTechnology },
+    { ref: hireTimeoutRef, isOpen: showHire, setOpen: setShowHire },
+  ]
+
   // Generalized enter function
-  const handleMouseEnter = (ref, isOpen, setOpen) => {
-    if (ref.current) {
-      clearTimeout(ref.current)
-      ref.current = null
-    }
+  const handleMouseEnter = (currentRef, isOpen, setOpen) => {
+    // Clear all timeouts and close other dropdowns
+    dropdowns.forEach(({ ref, setOpen: otherSetOpen }) => {
+      if (ref.current) {
+        clearTimeout(ref.current)
+        ref.current = null
+      }
+      if (ref !== currentRef) {
+        otherSetOpen(false) // Close other dropdowns
+      }
+    })
+
+    // Open the current dropdown if not already open
     if (!isOpen) {
       setOpen(true)
     }
@@ -44,12 +57,9 @@ export default function Header() {
       ref.current = setTimeout(() => {
         setOpen(false)
         ref.current = null
-      }, 1000)
+      }, 300) // Reduced timeout for better responsiveness
     }
   }
-
-  // const handleMouseEnter = (setter) => setter(true)
-  // const handleMouseLeave = (setter) => setter(false)
 
   return (
     <section
@@ -70,7 +80,6 @@ export default function Header() {
                       Home{" "}
                     </NavLink>
                     <Dropdown
-                      // onToggle={() => setShowAbout(!showAbout)}
                       show={showAbout}
                       onMouseEnter={() =>
                         handleMouseEnter(
@@ -143,15 +152,12 @@ export default function Header() {
                         <Container>
                           <Row className="my-4">
                             <Col md={6} lg={3} className="mb-3 mb-lg-0">
-                              {/* <ListGroup variant="flush"> */}
                               <DropdownItem href="#">
                                 Web Design Service
                               </DropdownItem>
-
                               <DropdownItem href="#">
                                 Website Development
                               </DropdownItem>
-                              {/* </ListGroup> */}
                             </Col>
                             <Col md={6} lg={3} className="mb-3 mb-md-0">
                               <DropdownItem href="#">

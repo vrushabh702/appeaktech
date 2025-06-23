@@ -343,6 +343,17 @@ hr {
 .technologytabs .techlist > *:empty {
   display: none;
 }
+/* .technologytabs .techlist > div {
+  width: 35px;
+  height: 35px;
+} */
+
+.technologytabs .techlist img {
+  height: 35px !important;
+  width: auto !important;
+  /* object-fit: cover !important; */
+}
+
 .integrity {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
