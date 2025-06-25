@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import {
   Navbar,
   NavLink,
@@ -9,20 +9,22 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-} from "react-bootstrap";
-import { useRef, useState } from "react";
-import styles from "../../app/styles/Header.module.css";
+} from "react-bootstrap"
+import { useRef, useState } from "react"
+import styles from "../../app/styles/Header.module.css"
 
 export default function Header() {
-  const [showAbout, setShowAbout] = useState(false);
-  const [showServices, setShowServices] = useState(false);
-  const [showTechnology, setShowTechnology] = useState(false);
-  const [showHire, setShowHire] = useState(false);
+  const [showAbout, setShowAbout] = useState(false)
+  const [showServices, setShowServices] = useState(false)
+  const [showTechnology, setShowTechnology] = useState(false)
+  const [showHire, setShowHire] = useState(false)
+  const [showServicesSubMenu, setShowServicesSubMenu] = useState(false)
+  const [showTechnologiesSubMenu, setShowTechnologiesSubMenu] = useState(false)
 
-  const aboutTimeoutRef = useRef(null);
-  const servicesTimeoutRef = useRef(null);
-  const techTimeoutRef = useRef(null);
-  const hireTimeoutRef = useRef(null);
+  const aboutTimeoutRef = useRef(null)
+  const servicesTimeoutRef = useRef(null)
+  const techTimeoutRef = useRef(null)
+  const hireTimeoutRef = useRef(null)
 
   // Store all timeout refs and their associated setters
   const dropdowns = [
@@ -30,36 +32,36 @@ export default function Header() {
     { ref: servicesTimeoutRef, isOpen: showServices, setOpen: setShowServices },
     { ref: techTimeoutRef, isOpen: showTechnology, setOpen: setShowTechnology },
     { ref: hireTimeoutRef, isOpen: showHire, setOpen: setShowHire },
-  ];
+  ]
 
   // Generalized enter function
   const handleMouseEnter = (currentRef, isOpen, setOpen) => {
     // Clear all timeouts and close other dropdowns
     dropdowns.forEach(({ ref, setOpen: otherSetOpen }) => {
       if (ref.current) {
-        clearTimeout(ref.current);
-        ref.current = null;
+        clearTimeout(ref.current)
+        ref.current = null
       }
       if (ref !== currentRef) {
-        otherSetOpen(false); // Close other dropdowns
+        otherSetOpen(false) // Close other dropdowns
       }
-    });
+    })
 
     // Open the current dropdown if not already open
     if (!isOpen) {
-      setOpen(true);
+      setOpen(true)
     }
-  };
+  }
 
   // Generalized leave function
   const handleMouseLeave = (ref, isOpen, setOpen) => {
     if (!ref.current && isOpen) {
       ref.current = setTimeout(() => {
-        setOpen(false);
-        ref.current = null;
-      }, 1000); // Reduced timeout for better responsiveness
+        setOpen(false)
+        ref.current = null
+      }, 1000) // Reduced timeout for better responsiveness
     }
-  };
+  }
 
   return (
     <section
@@ -152,27 +154,202 @@ export default function Header() {
                         <Container>
                           <Row className="my-4">
                             <Col md={6} lg={3} className="mb-3 mb-lg-0">
-                              <DropdownItem href="#">
-                                Web Design Service
+                              <DropdownItem>
+                                <DropdownItem
+                                  variant="white"
+                                  id="dropdown-web-design"
+                                  className={`${styles.dropDownToggle} bg-secondary `}
+                                >
+                                  Web Design
+                                </DropdownItem>
+                                <DropdownItem
+                                  className={`${styles.dropDownMenu} ${
+                                    showServicesSubMenu
+                                      ? styles.dropDownMenuShow
+                                      : ""
+                                  } mt-0`}
+                                >
+                                  <DropdownItem href="#">
+                                    Responsive UI/UX
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    Visual Design
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    Prototyping
+                                  </DropdownItem>
+                                </DropdownItem>
                               </DropdownItem>
-                              <DropdownItem href="#">
-                                Website Development
+                              <DropdownItem>
+                                <DropdownItem
+                                  variant="white"
+                                  id="dropdown-web-design"
+                                  className={`${styles.dropDownToggle} bg-secondary`}
+                                >
+                                  Website Development
+                                </DropdownItem>
+                                <DropdownItem
+                                  className={`${styles.dropDownMenu} ${
+                                    showServicesSubMenu
+                                      ? styles.dropDownMenuShow
+                                      : ""
+                                  } mt-0`}
+                                >
+                                  <DropdownItem href="#">
+                                    Web Application Dev
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    CMS (WordPress, Joomla)
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    Corporate & Enterprise Sites
+                                  </DropdownItem>
+                                </DropdownItem>
                               </DropdownItem>
                             </Col>
                             <Col md={6} lg={3} className="mb-3 mb-md-0">
-                              <DropdownItem href="#">
-                                E-commerce Development
+                              <DropdownItem>
+                                <DropdownItem
+                                  variant="white"
+                                  id="dropdown-web-design"
+                                  className={`${styles.dropDownToggle} bg-secondary`}
+                                >
+                                  E-Commerce Development
+                                </DropdownItem>
+                                <DropdownItem
+                                  className={`${styles.dropDownMenu} ${
+                                    showServicesSubMenu
+                                      ? styles.dropDownMenuShow
+                                      : ""
+                                  } mt-0`}
+                                >
+                                  <DropdownItem href="#">
+                                    E-commerce Consultation
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    WooCommerce
+                                  </DropdownItem>
+                                  <DropdownItem href="#">Shopify</DropdownItem>
+                                  <DropdownItem href="#">Magento</DropdownItem>
+                                  <DropdownItem href="#">
+                                    BigCommerce
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    B2B E-Commerce Web Apps
+                                  </DropdownItem>
+                                </DropdownItem>
                               </DropdownItem>
-                              <DropdownItem href="#">
-                                Mobile App Development
+                              <DropdownItem>
+                                <DropdownItem
+                                  variant="white"
+                                  id="dropdown-web-design"
+                                  className={`${styles.dropDownToggle} bg-secondary`}
+                                >
+                                  Mobile App Development
+                                </DropdownItem>
+                                <DropdownItem
+                                  className={`${styles.dropDownMenu} ${
+                                    showServicesSubMenu
+                                      ? styles.dropDownMenuShow
+                                      : ""
+                                  } mt-0`}
+                                >
+                                  <DropdownItem href="#">
+                                    iOS & Android Apps
+                                  </DropdownItem>
+                                  <DropdownItem href="#">Flutter</DropdownItem>
+                                  <DropdownItem href="#">
+                                    React Native
+                                  </DropdownItem>
+                                  <DropdownItem href="#">Ionic</DropdownItem>
+                                  <DropdownItem href="#">
+                                    App Design
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    Integration & Modernization
+                                  </DropdownItem>
+                                </DropdownItem>
                               </DropdownItem>
                             </Col>
                             <Col md={6} lg={3}>
-                              <DropdownItem href="#">
-                                Software Development
+                              <DropdownItem>
+                                <DropdownItem
+                                  variant="white"
+                                  id="dropdown-web-design"
+                                  className={`${styles.dropDownToggle} bg-secondary`}
+                                >
+                                  Software Development
+                                </DropdownItem>
+                                <DropdownItem
+                                  className={`${styles.dropDownMenu} ${
+                                    showServicesSubMenu
+                                      ? styles.dropDownMenuShow
+                                      : ""
+                                  } mt-0`}
+                                >
+                                  <DropdownItem href="#">
+                                    Custom Software Solutions
+                                  </DropdownItem>
+                                  <DropdownItem href="#">Web Apps</DropdownItem>
+                                  <DropdownItem href="#">
+                                    Maintenance & Support
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    QA & Testing
+                                  </DropdownItem>
+                                </DropdownItem>
                               </DropdownItem>
-                              <DropdownItem href="#">
-                                Data Visualization & Analytics
+                              <DropdownItem>
+                                <DropdownItem
+                                  variant="white"
+                                  id="dropdown-web-design"
+                                  className={`${styles.dropDownToggle} bg-secondary`}
+                                >
+                                  Data Visualization & Analytics
+                                </DropdownItem>
+                                <DropdownItem
+                                  className={`${styles.dropDownMenu} ${
+                                    showServicesSubMenu
+                                      ? styles.dropDownMenuShow
+                                      : ""
+                                  } mt-0`}
+                                >
+                                  <DropdownItem href="#">
+                                    BI Dashboards
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    Insights & Reporting
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    Analytics Integration
+                                  </DropdownItem>
+                                </DropdownItem>
+                              </DropdownItem>
+                              <DropdownItem>
+                                <DropdownItem
+                                  variant="white"
+                                  id="dropdown-web-design"
+                                  className={`${styles.dropDownToggle} bg-secondary`}
+                                >
+                                  SEO & Optimization
+                                </DropdownItem>
+                                <DropdownItem
+                                  className={`${styles.dropDownMenu} ${
+                                    showServicesSubMenu
+                                      ? styles.dropDownMenuShow
+                                      : ""
+                                  } mt-0`}
+                                >
+                                  <DropdownItem href="#">
+                                    On-page & Technical SEO
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    Speed & Performance Tuning
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    Ongoing Optimization
+                                  </DropdownItem>
+                                </DropdownItem>
                               </DropdownItem>
                             </Col>
                           </Row>
@@ -211,19 +388,121 @@ export default function Header() {
                         <Container>
                           <Row className="my-4">
                             <Col md={6} lg={3} className="mb-3 mb-lg-0">
-                              <DropdownItem href="#">
-                                E-commerce Development
+                              <DropdownItem>
+                                <DropdownItem
+                                  variant="white"
+                                  id="dropdown-web-design"
+                                  className={`${styles.dropDownToggle} bg-secondary`}
+                                >
+                                  E-commerce Platforms
+                                </DropdownItem>
+                                <DropdownItem
+                                  className={`${styles.dropDownMenu} ${
+                                    showTechnologiesSubMenu
+                                      ? styles.dropDownMenuShow
+                                      : ""
+                                  } mt-0`}
+                                >
+                                  <DropdownItem href="#">
+                                    WordPress
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    WooCommerce
+                                  </DropdownItem>
+                                  <DropdownItem href="#">Shopify</DropdownItem>
+                                  <DropdownItem href="#">Magento</DropdownItem>
+                                  <DropdownItem href="#">
+                                    BigCommerce
+                                  </DropdownItem>
+                                </DropdownItem>
                               </DropdownItem>
-                              <DropdownItem href="#">
-                                Front End Development
+                              <DropdownItem>
+                                <DropdownItem
+                                  variant="white"
+                                  id="dropdown-web-design"
+                                  className={`${styles.dropDownToggle} bg-secondary`}
+                                >
+                                  Frontend
+                                </DropdownItem>
+                                <DropdownItem
+                                  className={`${styles.dropDownMenu} ${
+                                    showTechnologiesSubMenu
+                                      ? styles.dropDownMenuShow
+                                      : ""
+                                  } mt-0`}
+                                >
+                                  <DropdownItem href="#">HTML</DropdownItem>
+                                  <DropdownItem href="#">CSS</DropdownItem>
+                                  <DropdownItem href="#">
+                                    Bootstrap
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    JavaScript
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    Angular JS
+                                  </DropdownItem>
+                                  <DropdownItem href="#">React JS</DropdownItem>
+                                  <DropdownItem href="#">Vue JS</DropdownItem>
+                                </DropdownItem>
                               </DropdownItem>
                             </Col>
                             <Col md={6} lg={3}>
-                              <DropdownItem href="#">
-                                Back End Development
+                              <DropdownItem>
+                                <DropdownItem
+                                  variant="white"
+                                  id="dropdown-web-design"
+                                  className={`${styles.dropDownToggle} bg-secondary`}
+                                >
+                                  Backend
+                                </DropdownItem>
+                                <DropdownItem
+                                  className={`${styles.dropDownMenu} 
+                                  ${
+                                    showTechnologiesSubMenu
+                                      ? styles.dropDownMenuShow
+                                      : ""
+                                  } 
+                                  mt-0`}
+                                >
+                                  <DropdownItem href="#">PHP</DropdownItem>
+                                  <DropdownItem href="#">Laravel</DropdownItem>
+                                  <DropdownItem href="#">Python</DropdownItem>
+                                  <DropdownItem href="#">Django</DropdownItem>
+                                  <DropdownItem href="#">ASP.NET</DropdownItem>
+                                  <DropdownItem href="#">Node.js</DropdownItem>
+                                  <DropdownItem href="#">
+                                    Ruby on Rails
+                                  </DropdownItem>
+                                </DropdownItem>
                               </DropdownItem>
-                              <DropdownItem href="#">
-                                Mobile App Development
+                              <DropdownItem>
+                                <DropdownItem
+                                  variant="white"
+                                  id="dropdown-web-design"
+                                  className={`${styles.dropDownToggle} bg-secondary`}
+                                >
+                                  Mobile
+                                </DropdownItem>
+                                <DropdownItem
+                                  className={`${styles.dropDownMenu} ${
+                                    showTechnologiesSubMenu
+                                      ? styles.dropDownMenuShow
+                                      : ""
+                                  } mt-0`}
+                                >
+                                  <DropdownItem href="#">
+                                    iOS (Swift)
+                                  </DropdownItem>
+                                  <DropdownItem href="#">
+                                    Android (Kotlin)
+                                  </DropdownItem>
+                                  <DropdownItem href="#">Flutter</DropdownItem>
+                                  <DropdownItem href="#">
+                                    React Native
+                                  </DropdownItem>
+                                  <DropdownItem href="#">Ionic</DropdownItem>
+                                </DropdownItem>
                               </DropdownItem>
                             </Col>
                           </Row>
@@ -308,5 +587,5 @@ export default function Header() {
         </Row>
       </Container>
     </section>
-  );
+  )
 }
