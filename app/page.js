@@ -1,20 +1,21 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { Row, Col, Tab, Tabs } from "react-bootstrap"
-import { Navbar, Nav, Dropdown, Container, Accordion } from "react-bootstrap"
-import "./page.module.css"
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules"
-import { Swiper, SwiperSlide } from "swiper/react"
+import { useState } from "react";
+import { Row, Col, Tab, Tabs } from "react-bootstrap";
+import { Navbar, Nav, Dropdown, Container, Accordion } from "react-bootstrap";
+import "./page.module.css";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
-import "swiper/css"
-import "swiper/css/navigation"
-import "swiper/css/pagination"
-import "swiper/css/scrollbar"
-import Image from "next/image"
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+import Image from "next/image";
 
+//
 export default function WelcomePage() {
-  const [key, setKey] = useState("home")
+  const [key, setKey] = useState("home");
 
   return (
     <div>
@@ -2153,5 +2154,5 @@ export default function WelcomePage() {
         </Container>
       </section>
     </div>
-  )
+  );
 }
