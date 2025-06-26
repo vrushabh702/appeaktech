@@ -1,18 +1,23 @@
-"use client";
+"use client"
 
-import { Row, Col } from "react-bootstrap";
-import { Container } from "react-bootstrap";
-import "../../../app/page.module.css";
+import { Row, Col } from "react-bootstrap"
+import { Container } from "react-bootstrap"
+import "../../../app/page.module.css"
+import styles from "../../../app/styles/Home.module.css"
+
+// import styles from  "../../../app/styles/Home.module.css"
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import "swiper/css"
+import "swiper/css/navigation"
+import "swiper/css/pagination"
+import "swiper/css/scrollbar"
 
 const AboutUsSection = () => {
   return (
-    <section className="blueBackground section-padding">
+    <section
+      className={`blueBackground ${styles.sectionPadding} section-padding`}
+    >
       <Container>
         <Row className="mb-4">
           <Col md={5}>
@@ -257,7 +262,7 @@ const AboutUsSection = () => {
         </Row>
       </Container>
     </section>
-  );
-};
+  )
+}
 
-export default AboutUsSection;
+export default AboutUsSection

@@ -59,7 +59,7 @@ const CaseStudies = () => {
                         src={caseStudy.imageSrc}
                         width={402}
                         height={297}
-                        alt={caseStudy.image}
+                        alt={caseStudy.imageAlt}
                         className="rounded-10 mb-3"
                       />
                       <h3 className="title fw-semibold text-white ">
