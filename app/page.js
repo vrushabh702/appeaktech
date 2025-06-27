@@ -30,6 +30,8 @@ export default function WelcomePage() {
       <ClientSection />
       <CaseStudies />
       <FaqSection />
+      <CaseStudies />
+      <FaqSection />
     </div>
   );
 }
