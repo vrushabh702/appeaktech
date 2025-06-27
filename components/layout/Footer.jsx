@@ -1,8 +1,8 @@
 // components/Footer.tsx
 
-import React from "react"
-import { Row, Col, Container } from "react-bootstrap"
-import styles from "./../../styles/footer.module.css"
+import React from "react";
+import { Row, Col, Container } from "react-bootstrap";
+import styles from "../../app/styles/footer.module.css";
 
 const Footer = () => {
   return (
@@ -364,7 +364,7 @@ const Footer = () => {
         </Container>
       </section>
     </section>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
