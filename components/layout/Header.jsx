@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import {
   Navbar,
   NavLink,
@@ -9,22 +9,22 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem,
-} from "react-bootstrap"
-import { useRef, useState } from "react"
-import styles from "../../app/styles/Header.module.css"
+} from "react-bootstrap";
+import { useRef, useState } from "react";
+import styles from "../../app/styles/Header.module.css";
 
 export default function Header() {
-  const [showAbout, setShowAbout] = useState(false)
-  const [showServices, setShowServices] = useState(false)
-  const [showTechnology, setShowTechnology] = useState(false)
-  const [showHire, setShowHire] = useState(false)
-  const [showServicesSubMenu, setShowServicesSubMenu] = useState(false)
-  const [showTechnologiesSubMenu, setShowTechnologiesSubMenu] = useState(false)
+  const [showAbout, setShowAbout] = useState(false);
+  const [showServices, setShowServices] = useState(false);
+  const [showTechnology, setShowTechnology] = useState(false);
+  const [showHire, setShowHire] = useState(false);
+  const [showServicesSubMenu, setShowServicesSubMenu] = useState(false);
+  const [showTechnologiesSubMenu, setShowTechnologiesSubMenu] = useState(false);
 
-  const aboutTimeoutRef = useRef(null)
-  const servicesTimeoutRef = useRef(null)
-  const techTimeoutRef = useRef(null)
-  const hireTimeoutRef = useRef(null)
+  const aboutTimeoutRef = useRef(null);
+  const servicesTimeoutRef = useRef(null);
+  const techTimeoutRef = useRef(null);
+  const hireTimeoutRef = useRef(null);
 
   // Store all timeout refs and their associated setters
   const dropdowns = [
@@ -32,36 +32,36 @@ export default function Header() {
     { ref: servicesTimeoutRef, isOpen: showServices, setOpen: setShowServices },
     { ref: techTimeoutRef, isOpen: showTechnology, setOpen: setShowTechnology },
     { ref: hireTimeoutRef, isOpen: showHire, setOpen: setShowHire },
-  ]
+  ];
 
   // Generalized enter function
   const handleMouseEnter = (currentRef, isOpen, setOpen) => {
     // Clear all timeouts and close other dropdowns
     dropdowns.forEach(({ ref, setOpen: otherSetOpen }) => {
       if (ref.current) {
-        clearTimeout(ref.current)
-        ref.current = null
+        clearTimeout(ref.current);
+        ref.current = null;
       }
       if (ref !== currentRef) {
-        otherSetOpen(false) // Close other dropdowns
+        otherSetOpen(false); // Close other dropdowns
       }
-    })
+    });
 
     // Open the current dropdown if not already open
     if (!isOpen) {
-      setOpen(true)
+      setOpen(true);
     }
-  }
+  };
 
   // Generalized leave function
   const handleMouseLeave = (ref, isOpen, setOpen) => {
     if (!ref.current && isOpen) {
       ref.current = setTimeout(() => {
-        setOpen(false)
-        ref.current = null
-      }, 1000) // Reduced timeout for better responsiveness
+        setOpen(false);
+        ref.current = null;
+      }, 1000); // Reduced timeout for better responsiveness
     }
-  }
+  };
 
   return (
     <section
@@ -78,7 +78,7 @@ export default function Header() {
                 <Navbar aria-controls="basic-navbar-nav" />
                 <Navbar className="p-0">
                   <Container className="me-auto navbar p-0">
-                    <NavLink href="#" className="text-white">
+                    <NavLink href="/" className="text-white">
                       Home{" "}
                     </NavLink>
                     <Dropdown
@@ -558,7 +558,7 @@ export default function Header() {
                     <NavLink href="#" className="text-white">
                       Case Studies{" "}
                     </NavLink>
-                    <NavLink href="#" className="text-white">
+                    <NavLink href="/contact-us" className="text-white">
                       Contact Us{" "}
                     </NavLink>
                     <NavLink href="#" className="text-white bookNowButton">
@@ -587,5 +587,5 @@ export default function Header() {
         </Row>
       </Container>
     </section>
-  )
+  );
 }
