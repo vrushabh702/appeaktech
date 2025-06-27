@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { Col, Container, Row } from "react-bootstrap"
-
+ 
 const caseStudiesData = [
   {
     id: 1,
@@ -30,7 +30,7 @@ const caseStudiesData = [
     link: "",
   },
 ]
-
+ 
 const CaseStudies = () => {
   return (
     <section className="desktop-padding-100">
@@ -59,7 +59,7 @@ const CaseStudies = () => {
                         src={caseStudy.imageSrc}
                         width={402}
                         height={297}
-                        alt={caseStudy.image}
+                        alt={caseStudy.imageAlt}
                         className="rounded-10 mb-3"
                       />
                       <h3 className="title fw-semibold text-white ">
@@ -80,3 +80,4 @@ const CaseStudies = () => {
   )
 }
 export default CaseStudies
+ 
