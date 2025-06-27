@@ -20,6 +20,12 @@ export default function Header() {
   const [showHire, setShowHire] = useState(false);
   const [showServicesSubMenu, setShowServicesSubMenu] = useState(false);
   const [showTechnologiesSubMenu, setShowTechnologiesSubMenu] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
+  const [showServices, setShowServices] = useState(false);
+  const [showTechnology, setShowTechnology] = useState(false);
+  const [showHire, setShowHire] = useState(false);
+  const [showServicesSubMenu, setShowServicesSubMenu] = useState(false);
+  const [showTechnologiesSubMenu, setShowTechnologiesSubMenu] = useState(false);
 
   const aboutTimeoutRef = useRef(null);
   const servicesTimeoutRef = useRef(null);
